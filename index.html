@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GOOGLE SEARCH</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<style type="text/css">
+		nav a{
+			font-size: 20px;
+			color: black;
+			text-decoration: none;
+			float: right;
+			width: 80px;
+			margin-top: 20px;
+		}
+		nav a:hover{
+			text-decoration:underline;
+		}
+		.search{
+			align-items: center;
+		}
+		.search button:hover{
+			box-shadow: 3px 3px #888888;
+		}
+		.search input:hover{
+			box-shadow: 3px 3px #888888;
+		}
+		.search button{
+			height: 40px;
+			width: 40px;
+			background: white;
+		}
+		.btns button{
+			height: 30px;
+			width: 150px;
+			background: #f2f2f2;
+			border: 2px solid #f2f2f2;
+			border-radius: 4px;
+			color: #5F6368;
+			font-family: arial,sans-serif;
+		    font-size: 14px;
+		    margin: 11px 4px;
+		    padding: 0 16px;
+		    line-height: 27px;
+		    height: 36px;
+		    min-width: 54px;
+		    text-align: center;
+		    cursor: pointer;
+		    user-select: none;
+		}
+		.btns button:hover{
+			box-shadow: 2px 2px #888888;
+		}
+		.tooltip {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		.tooltip .tooltiptext {
+		  visibility: hidden;
+		  width: 290px;
+		  background-color: black;
+		  border-radius: 6px;
+		  padding: 5px 0;
+
+		  /* Position the tooltip */
+		  position: absolute;
+		  z-index: 1;
+		}
+
+.tooltip .ttt{
+	visibility: hidden;
+	background: black;
+	border-radius: 6px;
+	color: white;
+	width: 155px;
+	height: 50px;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+.tooltip:hover .ttt {
+  visibility: visible;
+  margin-top: 60px;
+  margin-right: 20px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  margin-top: 60px;
+  margin-right: 400px;
+}
+
+.tooltiptext table
+{
+	width: 260px;
+    height: 230px;
+}
+.tooltiptext table td{
+	padding: 10px;
+}
+.tooltiptext table img{
+	height: 50px;
+	width: 50px;
+}
+.tooltiptext table img:hover{
+	height: 60px;
+	width: 60px;
+}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<nav style="height: 100px;width: 100%;">
+			<button style="border-radius: 100px;height: 60px;width: 60px;float: right;background: blue;color: white;font-size: 20px;">r</button>		
+			<a href="#">Images</a>
+			<a href="#">Gmail</a>
+			<div class="tooltip" style="float: right;margin-right: 40px;">
+				<button style="float: right;height: 50px;width: 50px;margin-top: 10px;background: transparent;border: none;"><i class="fa fa-th" aria-hidden="true"></i></button>
+			<!--	<h2 class="ttt">Google Apps</h2>-->
+				<span class="tooltiptext">
+					<table>
+						<tr>
+							<td><a href="#"><img src="images/1.jpg"></a></td>
+							<td><a href="#"><img src="images/2.jpg"></a></td>
+							<td><a href="#"><img src="images/3.jpg"></a></td>
+						</tr>						
+						<tr>
+							<td><a href="#"><img src="images/4.jpg"></a></td>
+							<td><a href="#"><img src="images/5.jpg"></a></td>
+							<td><a href="#"><img src="images/6.jpg"></a></td>
+						</tr>						
+					</table>
+				</span>
+			</div>
+		</nav>
+	</header>
+
+	<h1 style="font-size: 100px;text-align: center;">Google<button style="background: transparent;border: none;height: 40px;width: 40px;"><i class="fa fa-share-alt" style="color: blue;height: 20px;width: 20px;"></i></button></h1>
+	
+
+<!--SEARCH BAR-->
+<center>	
+	<div class="search">
+		<button style="border-top-left-radius: 20px;border-bottom-left-radius: 20px;"><i class="fa fa-search" aria-hidden="true"></i></button>
+		<input type="search" name="" placeholder="Search Google or type a URL" style="height: 40px;width: 35%;padding: 10px;background: transparent;margin: 0;background-color: transparent;">
+		<button style="border-top-right-radius: 20px;border-bottom-right-radius: 20px;"><i class="fa fa-microphone" aria-hidden="true"></i>
+		</button>
+	</div>
+	<br>
+	<div class="btns">
+		<button>Google Search</button>
+		<button>I'm feeling lucky</button>
+	</div>
+	<p>Google offered in: <a href="#">Hindi</a>&nbsp;&nbsp;<a href="#">English</a>&nbsp;&nbsp;<a href="#">Tamil</a>&nbsp;&nbsp;<a href="#">Malyalam</a></p>
+	</center>
+
+</body>
+</html>
